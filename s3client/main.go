@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"os"
 	"log"
+	"math"
 
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/aws/awserr"
@@ -51,5 +52,4 @@ func main() {
 	}
 
 	fmt.Printf("successfully uploaded file to %s/%s\n", bucket, key)
-
 }
